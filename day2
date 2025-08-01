@@ -1,0 +1,47 @@
+The Linux command line for beginners
+
+change directories (cd)
+to list their contents (ls)
+to rename or move files (mv)
+
+🐚the user would connect to one single master program that could then be used to launch any of the others. By wrapping the user’s commands this “shell” program, as it was known, could provide common capabilities to any of them, such as the ability to pass data from one command straight into another, or to use special wildcard characters to work with lots of similarly named files at once
+
+pwd.  print working directory
+You should see a directory path printed out (probably something like /home/YOUR_USERNAME), then another copy of that odd bit of text
+
+If you're ever in any doubt, the pwd command will tell you exactly what the current working directory is.
+
+cd change directory
+To go up to the parent directory, in this case back to “/”, use the special syntax of two dots (..) when changing directory
+
+cd ..
+
+
+mkdir dir1 dir2 dir3
+
+mkdir -p dir4/dir5/dir6
+This time you’ll see that only dir4 has been added to the list, because dir5 is inside it, and dir6 is inside that
+
+The “-p” that we used is called an option or a switch (in this case it means “create the parent directories, too”)
+
+
+Creating files using redirection
+
+Suppose we wanted to capture the output of that command as a text file that we can look at or manipulate further. All we need to do is to add the greater-than character (“>”) to the end of our command line, followed by the name of the file to write to
+
+We can use the cat command to look at its content:
+
+cat output.txt
+
+echo "This is a test"
+
+Yes, echo just prints its arguments back out again (hence the name). But combine it with a redirect, and you’ve got a way to easily create small test files:
+
+echo "This is a test" > test_1.txt
+echo "This is a second test" > test_2.txt
+echo "This is a third test" > test_3.txt
+
+You should cat each of these files to check their contents. But cat is more than just a file viewer - its name comes from ‘concatenate’, meaning “to link together”. If you pass more than one filename to cat it will output each of them, one after the other, as a single block of text:
+
+cat test_1.txt test_2.txt
+
