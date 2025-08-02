@@ -1,2 +1,27 @@
 The Linux command line for beginners 2
 
+Where you want to pass multiple file
+
+names to a single command, there are some useful shortcuts that can save you lot of typing if the files have similar names. A question mark ("?") can be used to indicate "any single character" within the file name An asterisk ("*") can be used to indicate "zero or more characters
+
+A couple of examples might help, the following commands all do the same thing
+
+cat test_1.txt test_2.txt test_3
+
+cat test_?.txt 
+
+cat test_*
+
+----
+
+cat t*, meaning "concatenate all the files whose names start with a t and are followed by zero or more other characters". Let's use this capability to join all our files together into a single new file, then view it:
+
+cat t* > combined.txt
+
+---
+
+If you do want to append to, rather than replace, the content of the files, double up on the greater-than character:
+
+cat t*>> combined.txt 
+echo "I've appended a line!" >>combined.txt
+cat combined.txt
