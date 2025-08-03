@@ -10,3 +10,49 @@ When viewing a file through less you can use the Up Arrow, Down Arrow, Page Up, 
 
 When you've finished viewing your file, press q to quit less and return to the command line.
 
+Moving and manipulating files
+
+Let’s begin by putting our combined.txt file into our dir1 directory, using the mv (move) command:
+
+mv combined.txt dir1
+
+1
+Now suppose it turns out that file shouldn’t be in dir1 after all. Let’s move it back to the working directory. We could cd into dir1 then use 
+
+mv combined.txt .. 
+But we can use another path shortcut to avoid changing directory at all. In the same way that two dots (..) represents the parent directory, so a single dot (.) can be used to represent the current working directory. Because we know there’s only one file in dir1 we can also just use “*” to match any filename in that directory, saving ourselves a few more keystrokes. Our command to move the file back into the working directory therefore becomes this (note the space before the dot, there are two parameters being passed to mv):
+
+mv dir1/* .
+
+to say “move combined.txt into the parent directory”
+
+
+If you pass more than two arguments, the last one is taken to be the destination directory and the others are considered to be files (or directories) to move
+
+Let’s use a single command to move combined.txt, all our test_n.txt files and dir3 into dir2
+
+mv combined.txt test_* dir3 dir2
+ls
+ls dir2
+
+With combined.txt now moved into dir2, what happens if we decide it’s in the wrong place again? Instead of dir2 it should have been put in dir6, which is the one that’s inside dir5, which is in dir4. With what we now know about paths, that’s no problem either:
+
+mv dir2/combined.txt dir4/dir5/dir6
+ls dir2
+ls dir4/dir5/dir6
+
+cp command copies them (again, note the space before the dot):
+
+cp dir4/dir5/dir6/combined.txt .
+ls dir4/dir5/dir6
+ls
+
+Now let’s create another copy of the file, in our working directory but with a different name. We can use the cp command again, but instead of giving it a directory path as the last argument, we’ll give it a new file name instead:
+
+cp combined.txt backup_combined.txt
+
+That’s good, but perhaps the choice of backup name could be better you just specify two arguments: the file you want to rename, and the new name you wish to use.
+
+mv backup_combined.txt combined_backup.txt
+ls
+
