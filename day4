@@ -1,0 +1,12 @@
+The Linux command line for beginners 3
+
+in order to see the whole file we now need to use a different program, called a pager (because it displays your file one page" at a time)
+
+These days there's a far better pager that you should use instead: because it replaces more, the programmers decided to call it less.
+
+less combined.txt
+
+When viewing a file through less you can use the Up Arrow, Down Arrow, Page Up, Page Down, Home and End keys to move through your file.
+
+When you've finished viewing your file, press q to quit less and return to the command line.
+
