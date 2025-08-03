@@ -56,3 +56,28 @@ That’s good, but perhaps the choice of backup name could be better you just sp
 mv backup_combined.txt combined_backup.txt
 ls
 
+Deleting files and folders
+
+perhaps we don’t really need three different copies of combined.txt after all. Let’s tidy up a bit, using the rm (remove) command:
+
+rm dir4/dir5/dir6/combined.txt 
+
+rm folder_*
+mark@linux-desktop:/tmp/tutorial$ rm folder_*
+
+rm: cannot remove 'folder_1': Is a directory
+rm: cannot remove 'folder_2': Is a directory
+rm: cannot remove 'folder_3': Is a directory
+
+rmdir folder_*
+
+rmdir will only delete empty folders.
+
+In the case of rmdir we can add a -p switch to tell it to also remove the parent directories. Think of it as the counterpoint to mkdir -p. So if you were to run rmdir -p dir1/dir2/dir3 it would first delete dir3, then dir2, then finally delete dir1
+
+
+
+
+rm -r folder_6
+
+
