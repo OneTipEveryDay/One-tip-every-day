@@ -1,1 +1,16 @@
 The Linux command line for beginners 4
+
+Let’s start with a simple question. How many lines are there in your combined.txt file? The wc (word count) command can tell us that, using the -l switch to tell it we only want the line count (it can also do character counts and, as the name suggests, word counts):
+
+wc -l combined.txt
+
+Here’s how to pipe the output of our ls command into wc:
+
+ls ~ | wc -l
+
+ls ~ (list the contents of the home directory) and wc -l (count the lines)
+
+This process of piping one command into another is so commonly used that the character itself is often referred to as the pipe character, so if you see that term you now know it just means the vertical bar.|
+
+Most command line tools come with a brief (and sometimes not-so-brief) instruction manual, accessed through the man (manual) command
+
