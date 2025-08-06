@@ -8,6 +8,18 @@ In an effort to reduce these problems many Linux distributions started to encour
 
 When used with no arguments it assumes you want to change to the root user (hence the first interpretation of the name), but you can pass a username to it in order to switch to a specific user account (the second interpretation)
 
+Better to disable the root account entirely and then, instead of allowing long-lived terminal sessions with dangerous powers, require the user to specifically request superuser rights on a per-command basis. The key to this approach is a command called sudo (as in “switch user and do this command”)
+
+Assuming you’re on a Linux system that uses sudo, and your account is configured as an administrator, try the following to see what happens when you try to access a file that is considered sensitive (it contains encrypted passwords):
+
+cat /etc/shadow
+sudo cat /etc/shadow
+
+Let’s install a new command line program from the standard Ubuntu repositories to illustrate this use of sudo:
+
+sudo apt install tree
+Once you’ve provided your password the apt program will print out quite a few lines of text to tell you what it’s doing. The tree program is only small, so it shouldn’t take more than a minute or two to download and install for most users. Once you are returned to the normal command line prompt, the program is installed and ready to use. Let’s run it to get a better overview of what our collection of files and folders looks like
+
 
 
 
