@@ -1,0 +1,14 @@
+The Linux command line for beginners 
+
+The command line and the superuser
+
+The superuser is, as the name suggests, a user with super powers. In older systems it was a real user, with a real username (almost always “root”) that you could log in as if you had the password. As for those super powers: root can modify or delete any file in any directory on the system, regardless of who owns them;In short, root can do just about anything, skipping easily round the safeguards that are usually put in place to stop users from overstepping their bounds.
+
+In an effort to reduce these problems many Linux distributions started to encourage the use of the su command. This is variously described as being short for ‘superuser’ or ‘switch user’and allows you to change to another user on the machine without having to log out and in again.
+
+When used with no arguments it assumes you want to change to the root user (hence the first interpretation of the name), but you can pass a username to it in order to switch to a specific user account (the second interpretation)
+
+
+
+
+
