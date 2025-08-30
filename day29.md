@@ -43,3 +43,12 @@
 
 که آخری بُوَد آخر، شبان یلدا را
 </h1>
+Who was she ?
+Give me ashtray first...
+could tell you everything about her
+Who she was...
+How we meet
+The color of her eye
+sand the shape of her nose
+I can see her
+Right in front of me
