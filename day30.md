@@ -1,4 +1,5 @@
 <div align="center">
+ 
 # 102.1 Design hard disk layout
 
 ## Basics
