@@ -25,3 +25,7 @@ srv	`Data for services provided by this system`<br>
 tmp	`Temporary files, sometimes purged on each boot`<br>
 usr	`Secondary hierarchy`<br>
 var	`Variable data (logs, ...)`<br>
+
+## Partitions
+
+
