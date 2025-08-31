@@ -13,8 +13,10 @@
 
 
 + [x] bin	`Essential command binaries` <br>
+
 ```sh
  boot	Static files of the boot loader ```
+
 <br>
 dev	`Device files`<br>
 etc	`Host-specific system configuration`<br>
