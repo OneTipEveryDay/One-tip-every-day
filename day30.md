@@ -1,3 +1,4 @@
+<div align="center">
 # 102.1 Design hard disk layout
 
 ## Basics
@@ -31,3 +32,22 @@ var	`Variable data (logs, ...)`<br>
 ## Partitions
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
