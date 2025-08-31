@@ -18,7 +18,8 @@
  boot	`Static files of the boot loader`
 
 <br>
-dev	`Device files`<br>
+dev	`Device files`
+<br>
 etc	`Host-specific system configuration`<br>
 home	`Home directory of the users`<br>
 lib	`Essential shared libraries and kernel modules`<br>
