@@ -10,8 +10,8 @@
 > This might be your enlightening moment in your Linux journey. Understanding Filesystem Hierarchy Standard (FHS) can help you find your programs, configs, logs and more without having prior knowledge about them. The table below has been the standard the latest revision since 2015.
 
 
-bin	`Essential command binaries` <br>
-boot	`Static files of the boot loader`<br>
++ [x] bin	`Essential command binaries` <br>
+```sh boot	`Static files of the boot loader ``` <br>
 dev	`Device files`<br>
 etc	`Host-specific system configuration`<br>
 home	`Home directory of the users`<br>
