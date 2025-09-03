@@ -1,5 +1,5 @@
 <div align="center">
-#Partitions
+<h1>Partitions</h1>
 
 > [!IMPORTANT]
 >  You have to PARTITION the disks, that is to create smaller parts on a big disk. These are self-contained sections on the main drive. OS sees these as standalone disks. We recognize them as: - /dev/sda1 (first partition of the first SCSI disk) - /dev/hdb3 (3rd partition on the second disk)
