@@ -38,10 +38,10 @@ $ sudo fdisk -l
 
 ## Boot overview
 
-> Most systems use BIOS or UEFI. When on BIOS, the system will do a self test called POST (Power-On Self-Test). Then it will hand over the boot process to the first sector of Master Boot Record (MBR)
-> MBR is only 512 bytes so we need a smart bootloader to handle larger boot managers and even multiple systems. Some of these boot loaders are LILO, GRUB and GRUB2.
-> If the system is using UEFI, the hardware will follow the UEFI stages. They start with a security phase and will continue till the end phase where the UEFI looks for an EFI System Partition, which is just a FAT32 partition (Usually the first one, but that's implementation-defined) with PE executables and runs them.
-> In both cases, the binary starts the boot loader. It might be a complete bootloader on /boot/efi/ of your computer or a small loader for the main grub on the MBR or a windows loader or even a chainloader.
+> Most systems use BIOS or UEFI. When on BIOS, the system will do a self test called POST (Power-On Self-Test). Then it will hand over the boot process to the first sector of Master Boot Record (MBR)<br>
+> MBR is only 512 bytes so we need a smart bootloader to handle larger boot managers and even multiple systems. Some of these boot loaders are LILO, GRUB and GRUB2.<br>
+> If the system is using UEFI, the hardware will follow the UEFI stages. They start with a security phase and will continue till the end phase where the UEFI looks for an EFI System Partition, which is just a FAT32 partition (Usually the first one, but that's implementation-defined) with PE executables and runs them.<br>
+> In both cases, the binary starts the boot loader. It might be a complete bootloader on /boot/efi/ of your computer or a small loader for the main grub on the MBR or a windows loader or even a chainloader.<br>
 >
 
 #102.4 Use Debian package management
