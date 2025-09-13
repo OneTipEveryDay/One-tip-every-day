@@ -1,2 +1,3 @@
 $ tty-clock
-
+$ neofetch
+$ conkey
