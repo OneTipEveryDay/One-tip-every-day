@@ -1,0 +1,26 @@
+101.2 Boot the System
+
+The Boot Process
+1.Motherboard Firmware does a PowerOnSelfTest(POST)
+
+2.Motherboard loads the bootloader
+
+3.Bootloader loads the Linux Kernel-based on its configs/commands
+
+4.The Kernel loads and prepares the system (root filesystem) and runs the initialization program
+
+5.Init program start the service such as web server, graphical interface, networking, etc.
+
+UEFI
+Unified Extensible Firmware Interface.
+
+Modern and fancy
+Specifies a special disk partition for the bootloader. Called EFI System Partition (ESP)
+
+Bootloader
+
+Bootloader initializes the minimum hardware needed to boot the system. then, it locates and runs the OS.
+
+Kernel
+The Kernel is the core of your operating system. it basically is LINUX itself. Your bootloader loads the kernel in the memory and runs it. But the kernel needs some initial info to start; Things like drivers which are necessary to work with the hardware. Those are stored in initrd or initramfs alongside the kernel and used during the boot.
+

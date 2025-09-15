@@ -1,0 +1,12 @@
+101.1 Determine and configure hardware settings from jadi
+
+**Sysfs
+
+#Sysfs is a pseudo file system provided by the Linux kernel that exports information about various kernel subsystems, hardware devices, and associated device drivers from the kernel's device model to user space through virtual files.
+
+#Sysfs is mounted under the /sys mount point.
+
+ls /sys
+block  bus  class  dev  devices  firmware  fs  hypervisor  kernel  module  power
+
+#All block devices are at the #block and #bus directory has all the connected PCI, USB, serial, ... devices. Note that here in sys we have the devices based on their technology but /dev/ is abstracted
